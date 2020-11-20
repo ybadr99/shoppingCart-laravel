@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cart;
 use App\Product;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        $products = Product::all();
+        return view('product.index',compact('products'));
     }
 
     /**
@@ -81,5 +83,16 @@ class ProductController extends Controller
     public function destroy(Product $product)
     {
         //
+    }
+
+    public function addToCart(Product $product) {
+        
+        if (session()->has('cart')) {
+            $cart = new Cart(session()->get('cart'));
+        } else {
+            $cart = new Cart();
+        }
+        $cart->add($product);
+        dd($cart);
     }
 }
