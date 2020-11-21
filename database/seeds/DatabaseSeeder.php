@@ -23,30 +23,30 @@ class DatabaseSeeder extends Seeder
 
         Product::create([
             'title' => 'Ipad',
-            'price' => 249999,
+            'price' => 500,
             'image' =>'apple-ipad',
         ]);
 
         Product::create([
             'title' => 'Apple Watch',
-            'price' => 249999,
+            'price' => 300,
             'image' =>'apple-watch',
         ]);
 
         Product::create([
             'title' => 'Grama phone',
-            'price' => 249999,
+            'price' => 150,
             'image' =>'gramaphone',
         ]);
 
         Product::create([
             'title' => 'Head-Phone',
-            'price' => 249999,
+            'price' => 50,
             'image' =>'head-phone',
         ]);
         Product::create([
             'title' => 'Iphone',
-            'price' => 249999,
+            'price' => 400,
             'image' =>'iphone',
         ]);
         Product::create([
@@ -56,17 +56,17 @@ class DatabaseSeeder extends Seeder
         ]);
         Product::create([
             'title' => 'pimg-eah',
-            'price' => 249999,
+            'price' => 250,
             'image' =>'pimg-eah',
         ]);
         Product::create([
             'title' => 'Iphone',
-            'price' => 249999,
+            'price' => 400,
             'image' =>'iphone',
         ]);
         Product::create([
             'title' => 'Speaker',
-            'price' => 249999,
+            'price' => 350,
             'image' =>'speaker',
         ]);
 
